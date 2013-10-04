@@ -5,11 +5,11 @@ require 'chatbot/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "chatbot"
-  spec.version       = Chatbot::VERSION
+  spec.version       = ChatBot::VERSION
   spec.authors       = ["Rohit Kumar"]
   spec.email         = ["rohit.kumar@rutgers.edu"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "A simple gem to make writing groupme bots easier"
+  spec.summary   = "A simple gem to make writing groupme bots easier"
   spec.homepage      = ""
   spec.license       = "MIT"
 
