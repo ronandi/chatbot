@@ -18,7 +18,7 @@ module ChatBot
         if rule.nil?
           puts 'Message did not match a rule'
         else
-          outmessage = rule.call(message.body)
+          outmessage = rule.call(message)
           unless outmessage.nil?
             send_message(outmessage)
           end

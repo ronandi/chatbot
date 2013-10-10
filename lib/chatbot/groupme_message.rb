@@ -4,9 +4,14 @@ module ChatBot
 
     attr_reader :message, :sender
 
-    def initialize(gm_msg)
-      @message = gm_msg['text']
-      @sender = gm_msg['text']
+    def initialize(message, sender)
+      begin
+        sender = sender.to_str
+      rescue NoMethodError
+        raise ArgumentError, "expected sender to be string"
+      end
+      @message = message || ""
+      @sender = sender
     end
   end
 end

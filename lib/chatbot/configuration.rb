@@ -1,5 +1,4 @@
 module ChatBot
-  #TODO impl this
   class Configuration
     API_URI = 'https://api.groupme.com/v3/bots/post'
 
