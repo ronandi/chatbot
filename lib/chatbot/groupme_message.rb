@@ -2,9 +2,9 @@ module ChatBot
   class GroupMeMessage
     include Commandable
 
-    attr_reader :message, :sender
+    attr_reader :message, :sender, :sender_id
 
-    def initialize(message, sender)
+    def initialize(message, sender, sender_id)
       begin
         sender = sender.to_str
       rescue NoMethodError
@@ -12,6 +12,7 @@ module ChatBot
       end
       @message = message || ""
       @sender = sender
+      @sender_id = sender_id
     end
   end
 end

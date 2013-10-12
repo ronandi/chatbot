@@ -6,7 +6,7 @@ module ChatBot
       if (gm_msg["name"].nil?)
         raise ArgumentError, "Invalid GroupMe message"
       end
-      return GroupMeMessage.new(gm_msg["text"], gm_msg["name"])
+      return GroupMeMessage.new(gm_msg["text"], gm_msg["name"], gm_msg["user_id"])
     end
   end
 end
