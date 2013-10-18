@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["rohit.kumar@rutgers.edu"]
   spec.description   = "A simple gem to make writing groupme bots easier"
   spec.summary       = "A simple gem to make writing groupme bots easier"
-  spec.homepage      = ""
+  spec.homepage      = "http://www.github.com/ronandi/chatbot"
   spec.license       = "MIT"
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
