@@ -15,15 +15,14 @@ module ChatBot
       message = GroupMeParser.parse(rawMessage)
       if message.is_command?
         rule = find_rule(message.command)
-        if rule.nil?
-          puts 'Message did not match a rule'
-        else
+        unless rule.nil?
           outmessage = rule.call(message)
           unless outmessage.nil?
             send_message(outmessage)
           end
         end
       end
+      return message
     end
 
     def command(command, &block)
