@@ -4,11 +4,11 @@ Chatbot lets you define chat commands easily.
 
 ## Installation
 
-Clone this repo and then run gem build and gem install, or
+    gem install chatbot
 
-Add this line to your application's Gemfile:
+Or add this line to your application's Gemfile:
 
-    gem 'chatbot', :git => "git://github.com/ronandi/chatbot.git"
+    gem 'chatbot'
 
 And then execute:
 
